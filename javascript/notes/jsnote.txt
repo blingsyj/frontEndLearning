@@ -595,9 +595,8 @@ this
         }
         var person = createPerson("aaa", 16);
         var dog = createDog("bbb", 18);
-        console.log(instanceof person);
-        console.log(instanceof dog);
-        结果都为Object
+        console.log(instanceof person); // Object
+        console.log(instanceof dog); // Object
         缺点：无法得知所创建的是一个什么对象，所以出现了构造函数来解决这个问题
     构造函数：
         function Person(name, age){
